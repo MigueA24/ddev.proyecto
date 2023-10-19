@@ -1,0 +1,23 @@
+uuid: b55b5c51-3002-414c-b800-9bf9dd4f04c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - ecommerce
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: ecommerce_syndicate
+theme: ecommerce
+region: navigation
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

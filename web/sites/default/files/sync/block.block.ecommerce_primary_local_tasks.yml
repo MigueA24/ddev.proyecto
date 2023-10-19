@@ -1,0 +1,22 @@
+uuid: 8d1366eb-af0a-477d-bd2a-e4c1b37738d0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ecommerce
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: ecommerce_primary_local_tasks
+theme: ecommerce
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

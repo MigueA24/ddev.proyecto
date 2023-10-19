@@ -1,0 +1,10 @@
+uuid: a32223e9-13b6-4e7a-b942-75ee64421152
+langcode: en
+status: true
+dependencies: {  }
+id: camisetas
+label: Camisetas
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: false

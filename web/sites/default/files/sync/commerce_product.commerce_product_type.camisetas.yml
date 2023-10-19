@@ -1,0 +1,14 @@
+uuid: 07e506e9-0913-4d4f-bfd5-e7fdda243846
+langcode: en
+status: true
+dependencies: {  }
+id: camisetas
+label: Camisetas
+traits: {  }
+locked: false
+description: ''
+variationType: null
+variationTypes:
+  - camisetas
+multipleVariations: true
+injectVariationFields: true

@@ -1,0 +1,20 @@
+uuid: 4c2e5c3f-a580-4e2a-aa5c-d91f49235118
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ecommerce
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: ecommerce_primary_admin_actions
+theme: ecommerce
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: abe603ee-b727-4295-99c2-34c42c3a6d76
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ecommerce
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: ecommerce_content
+theme: ecommerce
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
