@@ -1,5 +1,5 @@
 uuid: 7ef1b8f4-2ca1-40b6-8fbf-e06a3798ce3c
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -10,6 +10,6 @@ dependencies:
 _core:
   default_config_hash: rNBHCP7hJFMjP_iDe9-0AsSfkGC98V6Lh_oeOwmLos8
 id: profile.admin
-label: Admin
+label: Administrar
 targetEntityType: profile
 cache: true

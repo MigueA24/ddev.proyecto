@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.camisetas
+    - field.field.commerce_product_variation.camisetas.attribute_color
     - field.field.commerce_product_variation.camisetas.attribute_parches
   module:
     - commerce_price
@@ -12,6 +13,12 @@ targetEntityType: commerce_product_variation
 bundle: camisetas
 mode: default
 content:
+  attribute_color:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   attribute_parches:
     type: options_select
     weight: 1

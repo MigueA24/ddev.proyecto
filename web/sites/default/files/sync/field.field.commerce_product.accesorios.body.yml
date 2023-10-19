@@ -1,0 +1,23 @@
+uuid: a1e3ec1d-3bd1-4d09-a08b-9f7826e02dac
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.accesorios
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.accesorios.body
+field_name: body
+entity_type: commerce_product
+bundle: accesorios
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

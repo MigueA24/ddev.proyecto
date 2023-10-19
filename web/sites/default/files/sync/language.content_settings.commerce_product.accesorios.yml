@@ -1,0 +1,11 @@
+uuid: 018f69d8-a0b6-4e5a-a6f8-c6fd2d04faaf
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.accesorios
+id: commerce_product.accesorios
+target_entity_type_id: commerce_product
+target_bundle: accesorios
+default_langcode: site_default
+language_alterable: false

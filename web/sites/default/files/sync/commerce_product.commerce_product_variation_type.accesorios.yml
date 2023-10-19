@@ -1,0 +1,10 @@
+uuid: d196e6e8-0d4e-4792-ad7c-a5542d172e28
+langcode: es
+status: true
+dependencies: {  }
+id: accesorios
+label: Accesorios
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: null

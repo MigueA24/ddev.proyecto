@@ -1,0 +1,8 @@
+uuid: 1cc8fad5-0354-4fb2-abf8-6fe918caa36f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Marca camisetas'
+vid: marca_camisetas
+description: 'Marca camisetas'
+weight: 0

@@ -1,5 +1,5 @@
 uuid: 64ca750d-f5c8-49ca-87b6-60d55d053761
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: profile.customer.address
 field_name: address
 entity_type: profile
 bundle: customer
-label: Address
+label: Dirección
 description: ''
 required: true
 translatable: false
@@ -21,6 +21,8 @@ default_value: {  }
 default_value_callback: ''
 settings:
   available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
   fields:
     administrativeArea: administrativeArea
     locality: locality
@@ -33,6 +35,4 @@ settings:
     givenName: givenName
     additionalName: additionalName
     familyName: familyName
-  langcode_override: ''
-  field_overrides: {  }
 field_type: address

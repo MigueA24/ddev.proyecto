@@ -11,7 +11,7 @@ id: commerce_product.camisetas.body
 field_name: body
 entity_type: commerce_product
 bundle: camisetas
-label: Body
+label: Descripción
 description: ''
 required: false
 translatable: true

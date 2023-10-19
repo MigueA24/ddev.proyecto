@@ -1,5 +1,5 @@
 uuid: 72d7ff36-d678-43dd-98d6-a49bd145eb7d
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -50,8 +50,8 @@ content:
     settings:
       form_mode: default
       override_labels: true
-      label_singular: 'order item'
-      label_plural: 'order items'
+      label_singular: 'línea de pedido'
+      label_plural: 'líneas de pedido'
       allow_new: true
       allow_existing: false
       match_operator: CONTAINS

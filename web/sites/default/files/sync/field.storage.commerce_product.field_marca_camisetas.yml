@@ -1,0 +1,20 @@
+uuid: 1fd654db-5c0a-4f79-9de2-5fe99c5a6b0c
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+id: commerce_product.field_marca_camisetas
+field_name: field_marca_camisetas
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

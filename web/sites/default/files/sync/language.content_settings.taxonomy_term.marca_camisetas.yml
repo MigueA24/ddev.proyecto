@@ -1,0 +1,11 @@
+uuid: 14801a57-11c5-4f2e-9bb7-c22ab4706387
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marca_camisetas
+id: taxonomy_term.marca_camisetas
+target_entity_type_id: taxonomy_term
+target_bundle: marca_camisetas
+default_langcode: site_default
+language_alterable: true

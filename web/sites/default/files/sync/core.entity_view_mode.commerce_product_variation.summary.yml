@@ -1,5 +1,5 @@
 uuid: 93d53786-94a8-418a-9bb9-a0726a57fd21
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -10,6 +10,6 @@ dependencies:
 _core:
   default_config_hash: 23R0npqqL2T9F-gDL2Lor2GfZj_lDvmv-kwdQzPCxMw
 id: commerce_product_variation.summary
-label: Summary
+label: Resumen
 targetEntityType: commerce_product_variation
 cache: true

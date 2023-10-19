@@ -1,0 +1,14 @@
+uuid: 6fa6474b-5222-4963-b5a7-f8372a8155d9
+langcode: es
+status: true
+dependencies: {  }
+id: accesorios
+label: Accesorios
+traits: {  }
+locked: false
+description: ''
+variationType: accesorios
+variationTypes:
+  - accesorios
+multipleVariations: true
+injectVariationFields: true
