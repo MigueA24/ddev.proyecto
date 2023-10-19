@@ -1,0 +1,19 @@
+uuid: ecf89393-ddff-477b-92d0-0bed2ee259d0
+langcode: en
+status: true
+dependencies: {  }
+id: transferencia_bancaria
+label: 'transferencia bancaria'
+weight: null
+plugin: manual
+configuration:
+  display_label: 'Transferencia Bancaria'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  instructions:
+    value: ''
+    format: plain_text
+conditions: {  }
+conditionOperator: AND
