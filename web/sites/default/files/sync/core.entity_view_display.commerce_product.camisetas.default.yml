@@ -6,31 +6,32 @@ dependencies:
     - commerce_product.commerce_product_type.camisetas
     - field.field.commerce_product.camisetas.body
     - field.field.commerce_product.camisetas.field_categoria
+    - field.field.commerce_product.camisetas.field_descripcion_corta
     - field.field.commerce_product.camisetas.field_imagen_categoria
     - field.field.commerce_product.camisetas.field_marca_camisetas
   module:
     - commerce_product
     - image
-    - text
 id: commerce_product.camisetas.default
 targetEntityType: commerce_product
 bundle: camisetas
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 11
-    region: content
   field_categoria:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 13
+    weight: 3
+    region: content
+  field_descripcion_corta:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_imagen_categoria:
     type: image
@@ -41,7 +42,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 15
+    weight: 5
     region: content
   field_marca_camisetas:
     type: entity_reference_label
@@ -49,7 +50,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 14
+    weight: 4
     region: content
   title:
     type: string
@@ -57,7 +58,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
+    weight: 0
     region: content
   variations:
     type: commerce_add_to_cart
@@ -65,9 +66,10 @@ content:
     settings:
       combine: true
     third_party_settings: {  }
-    weight: 10
+    weight: 1
     region: content
 hidden:
+  body: true
   created: true
   langcode: true
   stores: true

@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.camisetas
     - field.field.commerce_product.camisetas.body
     - field.field.commerce_product.camisetas.field_categoria
+    - field.field.commerce_product.camisetas.field_descripcion_corta
     - field.field.commerce_product.camisetas.field_imagen_categoria
     - field.field.commerce_product.camisetas.field_marca_camisetas
     - image.style.thumbnail
@@ -13,22 +14,11 @@ dependencies:
     - commerce
     - image
     - path
-    - text
 id: commerce_product.camisetas.default
 targetEntityType: commerce_product
 bundle: camisetas
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 5
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 8
@@ -40,6 +30,14 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_descripcion_corta:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 255
+      placeholder: ''
     third_party_settings: {  }
   field_imagen_categoria:
     type: image_image
@@ -104,4 +102,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  body: true
   variations: true

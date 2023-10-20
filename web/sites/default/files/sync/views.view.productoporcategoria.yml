@@ -1,15 +1,14 @@
-uuid: 31bdec7d-fc14-4a1c-bbfe-672d802100c8
+uuid: 296395e0-c8d9-4eb8-ad0b-df1e2f1f5409
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.commerce_product.body
+    - field.storage.commerce_product.field_descripcion_corta
     - field.storage.commerce_product.field_imagen_categoria
   module:
     - commerce_price
     - commerce_product
     - image
-    - text
 id: productoporcategoria
 label: ProductoPorCategoria
 module: views
@@ -152,7 +151,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ' '
+          separator: ''
           field_api_classes: false
         price__number:
           id: price__number
@@ -220,10 +219,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        body:
-          id: body
-          table: commerce_product__body
-          field: body
+        field_descripcion_corta:
+          id: field_descripcion_corta
+          table: commerce_product__field_descripcion_corta
+          field: field_descripcion_corta
           relationship: product_id
           group_type: group
           admin_label: ''
@@ -270,8 +269,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: string
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -296,7 +296,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: " <div class=\"col-lg-4 col-md-6 espaciohaciaabajo\">\r\n                    <div class=\"card\">\r\n                        <img class=\"img-responsive\" src=\"{{ field_imagen_categoria }}\">\r\n                        <h4>{{ title }}</h4>\r\n                       {{ body }}\r\n                       <div class=\"price-wrap h5\">\r\n                          <span class=\"price-new\">{{ price__number }}</span> \r\n                      </div>\r\n                        <a href=\"blog-ici.html\" class=\"blue-button\">Ver detalles</a>\r\n               </div>\r\n</div>"
+            text: "<div class=\"col-lg-4 col-md-6 espaciohaciaabajo\">\r\n                    <div class=\"card\">\r\n\r\n          \r\n                        <img class=\"img-responsive\" src=\"{{ field_imagen_categoria }}\">\r\n                        <h4>{{ title }}</h4>\r\n                        \r\n                       <p>  {{ field_descripcion_corta }} </p>\r\n\t\t\t\t\t\t<div class=\"price-wrap h5\">\r\n\t\t\t\t\t\t\t<span class=\"price-new\">{{ price__number }}</span> \r\n\t\t\t\t\t\t</div>\r\n                        <a href=\"blog-ici.html\" class=\"blue-button\">Ver detalles</a>\r\n                    </div>\r\n                </div>"
             make_link: false
             path: ''
             absolute: false
@@ -476,7 +476,7 @@ display:
         - url
         - url.query_args
       tags:
-        - 'config:field.storage.commerce_product.body'
+        - 'config:field.storage.commerce_product.field_descripcion_corta'
         - 'config:field.storage.commerce_product.field_imagen_categoria'
   page_1:
     id: page_1
@@ -494,5 +494,5 @@ display:
         - url
         - url.query_args
       tags:
-        - 'config:field.storage.commerce_product.body'
+        - 'config:field.storage.commerce_product.field_descripcion_corta'
         - 'config:field.storage.commerce_product.field_imagen_categoria'
