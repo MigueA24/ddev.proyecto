@@ -39,3 +39,4 @@ jhonatan:
     theme:
       css/style.css: {}
       css/productosporcategorias.css: {}
+      css/fontawesome/css/fontawesome-all.min.css: {}

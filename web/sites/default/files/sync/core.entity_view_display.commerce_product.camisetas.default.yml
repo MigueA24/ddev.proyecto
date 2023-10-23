@@ -19,15 +19,15 @@ mode: default
 content:
   field_categoria:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 3
     region: content
   field_descripcion_corta:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -46,9 +46,9 @@ content:
     region: content
   field_marca_camisetas:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 4
     region: content
