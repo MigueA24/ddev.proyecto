@@ -61,13 +61,13 @@
 
     <div{{ attributes.addClass(classes, 'field--items') }}>
 
-      {{ dump( items.0.content["#item"].entity.uri.value ) }}
+      {# dump( items.0.content["#item"].entity.uri.value ) #}
       {# kint( file_url(items.0.content["#item"].entity.uri.value )) #}
 
-      {{ dpm(file_url(items.0.content["#item"].entity.uri.value)) }}
+      {# dpm(file_url(items.0.content["#item"].entity.uri.value)) #}
 
-{{ dpm(items.0.content["#item"].entity.uri.value|image_style('thumbnail')) }}
-{{ dpm(items.0.content["#item"].entity.uri.value|image_style('large')) }}
+{# dpm(items.0.content["#item"].entity.uri.value|image_style('thumbnail')) #}
+{# dpm(items.0.content["#item"].entity.uri.value|image_style('large')) #}
 
     <div id="divimagengrande">
       <img id="zoom_03" class="img-responsive" src="{{ items.0.content["#item"].entity.uri.value|image_style('large') }}" data-zoom-image="{{ file_url(items.0.content["#item"].entity.uri.value ) }}"/>
