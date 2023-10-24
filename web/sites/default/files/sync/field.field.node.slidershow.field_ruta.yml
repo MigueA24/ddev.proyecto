@@ -1,0 +1,19 @@
+uuid: fdd504eb-a793-4e59-a5cc-5ff5e1e86494
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ruta
+    - node.type.slidershow
+id: node.slidershow.field_ruta
+field_name: field_ruta
+entity_type: node
+bundle: slidershow
+label: Ruta
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 76ca54cf-9f74-4b9b-9872-9c3afa551326
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_de_la_ruta
+    - node.type.slidershow
+id: node.slidershow.field_titulo_de_la_ruta
+field_name: field_titulo_de_la_ruta
+entity_type: node
+bundle: slidershow
+label: 'Titulo de la ruta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
