@@ -1,0 +1,17 @@
+uuid: f81b31d8-2bff-44a5-b0db-0311c0b08f8f
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NzoU8g2Q_HdPlk1Mm7KilV1FwnWeMmNt6dRjcCBJXj4
+name: flexslider_full
+label: 'Flexslider Full'
+effects:
+  7c3142f8-ebf5-4cb3-9815-2140c9ef8466:
+    id: image_scale_and_crop
+    data:
+      width: 800
+      height: 500
+      anchor: center-center
+    weight: 1
+    uuid: 7c3142f8-ebf5-4cb3-9815-2140c9ef8466

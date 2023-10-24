@@ -47,6 +47,7 @@ jhonatanslider:
     theme:
       css/style.css: {}
   js:
+    js/jhonatan/flex.js: {}
     js/jhonatan/jquery.elevatezoom.js: {}
     js/jhonatan/custom.js: {}
   dependencies:

@@ -9,7 +9,7 @@ dependencies:
     - field.field.commerce_product.camisetas.field_descripcion_corta
     - field.field.commerce_product.camisetas.field_imagen_categoria
     - field.field.commerce_product.camisetas.field_marca_camisetas
-    - image.style.imagenpequena
+    - image.style.large
   module:
     - commerce_product
     - image
@@ -39,7 +39,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: imagenpequena
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }

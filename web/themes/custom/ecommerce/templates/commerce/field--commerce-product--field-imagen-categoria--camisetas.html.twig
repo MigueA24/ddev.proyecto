@@ -54,6 +54,7 @@
 %}
 
 {{ attach_library('ecommerce/jhonatanslider') }}
+{{ attach_library('flexslider/flexslider') }}
 
 {% if label_hidden %}
   {% if multiple %}
@@ -74,21 +75,34 @@
 
     <div id="galeria">
 
+      <div class="flexslider carousel">
+       <ul class="slides">
+
       {% for item in items %}
 
-      <a href="#" data-image="{{ item.content["#item"].entity.uri.value|image_style('large') }}" data-zoom-image="{{ file_url(item.content["#item"].entity.uri.value) }}">
+      <li>
 
-        {{ item.content }}
+        <a href="#" data-image="{{ item.content["#item"].entity.uri.value|image_style('large') }}" data-zoom-image="{{ file_url(item.content["#item"].entity.uri.value) }}">
+
+          {{ item.content }}
 
       </a>
 
+    </li>
+
       {% endfor %}
+
+      </ul>
+    </div>
+
 
   </div>
 
     </div>
 
 <script type="text/javascript" src="web/themes/custom/ecommerce/js/jhonatan/custom.js"></script>
+
+<script type="text/javascript" src="web/themes/custom/ecommerce/js/jhonatan/flex.js"></script>
 
   {% endif %}
 
