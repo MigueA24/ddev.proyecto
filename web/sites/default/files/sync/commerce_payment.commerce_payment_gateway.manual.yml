@@ -1,19 +1,19 @@
-uuid: ecf89393-ddff-477b-92d0-0bed2ee259d0
-langcode: en
+uuid: 0961471f-d914-4740-af0f-8484832d8c18
+langcode: es
 status: true
 dependencies: {  }
-id: transferencia_bancaria
-label: 'transferencia bancaria'
+id: manual
+label: Manual
 weight: null
 plugin: manual
 configuration:
-  display_label: 'Transferencia Bancaria'
+  display_label: Manual
   mode: n/a
   payment_method_types:
     - credit_card
   collect_billing_information: true
   instructions:
-    value: ''
+    value: 'Esto es una prueba'
     format: plain_text
 conditions: {  }
 conditionOperator: AND

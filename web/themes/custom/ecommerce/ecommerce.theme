@@ -6,9 +6,3 @@
  *
  * Place your custom PHP code in this file.
  */
-
-function ecommerce_preprocess_commerce_product(&$variables) {
-  $product = $variables['elements']['#commerce_product'];
-  ksm("Esto es un prueba");
-  ksm($product->id());
-}

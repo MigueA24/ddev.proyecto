@@ -9,7 +9,6 @@ dependencies:
     - field.field.commerce_product.camisetas.field_descripcion_corta
     - field.field.commerce_product.camisetas.field_imagen_categoria
     - field.field.commerce_product.camisetas.field_marca_camisetas
-    - field.field.commerce_product.camisetas.field_visitas_del_producto
     - image.style.thumbnail
   module:
     - commerce
@@ -53,13 +52,6 @@ content:
     weight: 3
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_visitas_del_producto:
-    type: number
-    weight: 11
-    region: content
-    settings:
-      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
