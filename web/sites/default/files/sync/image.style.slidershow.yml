@@ -1,0 +1,15 @@
+uuid: e1fb417f-9f48-47d7-8321-a8c197ea5efd
+langcode: es
+status: true
+dependencies: {  }
+name: slidershow
+label: Slidershow
+effects:
+  5728c3e4-c2f0-44cf-9b7f-2557378ce1a8:
+    id: image_scale_and_crop
+    data:
+      width: 1000
+      height: 350
+      anchor: center-center
+    weight: 1
+    uuid: 5728c3e4-c2f0-44cf-9b7f-2557378ce1a8
