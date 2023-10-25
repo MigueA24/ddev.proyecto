@@ -6,13 +6,28 @@ dependencies:
     - commerce_product.commerce_product_variation_type.camisetas
     - field.field.commerce_product_variation.camisetas.attribute_color
     - field.field.commerce_product_variation.camisetas.attribute_parches
+    - field.field.commerce_product_variation.camisetas.field_precio_de_venta
   module:
+    - commerce_order
     - commerce_price
 id: commerce_product_variation.camisetas.default
 targetEntityType: commerce_product_variation
 bundle: camisetas
 mode: default
 content:
+  field_precio_de_venta:
+    type: commerce_price_calculated
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+      adjustment_types:
+        fee: fee
+        promotion: promotion
+        tax: tax
+    third_party_settings: {  }
+    weight: 1
+    region: content
   list_price:
     type: commerce_price_default
     label: above

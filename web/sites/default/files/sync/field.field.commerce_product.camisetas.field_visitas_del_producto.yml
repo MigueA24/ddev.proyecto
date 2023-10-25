@@ -1,0 +1,25 @@
+uuid: 42ea690e-2958-452f-ad71-3be179761243
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.camisetas
+    - field.storage.commerce_product.field_visitas_del_producto
+id: commerce_product.camisetas.field_visitas_del_producto
+field_name: field_visitas_del_producto
+entity_type: commerce_product
+bundle: camisetas
+label: 'visitas del producto'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

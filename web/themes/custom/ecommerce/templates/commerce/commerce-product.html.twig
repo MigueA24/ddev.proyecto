@@ -36,11 +36,24 @@
   {# - product|without('variation_attributes') - #}
 </article>
 
-{# dump( product|keys ) #}
+{{ dump( product|keys ) }}
 
 <div class="col-md-6">
 
-{{ product.field_imagen_categoria }}
+  {% set preciodeventa = product.variation_field_precio_de_venta.0["#calculated_price"]|replace({ '€' : ''}) %}
+  {% set preciooriginal = product.variation_price.0["#markup"]|replace({ '€' : ''}) %}
+
+
+  {% set preciooferta = (((preciooriginal - preciodeventa)/preciooriginal)*100)|number_format(0) %}
+
+  {% if preciooferta > 0 %}
+
+   <span class="badge-offer"><b> - {{ preciooferta }}%</b></span>
+
+  {% endif %}
+
+  {{ product.field_imagen_categoria }}
+  
 
 
 </div>
@@ -54,7 +67,20 @@
 {{ product.field_marca_camisetas }}
 
 <br>
-{{ product.variation_price }}
+
+<div class="price-wrap h5 divpreciodetalle">
+  <span class="price-new">{{ product.variation_field_precio_de_venta }}</span>
+  {% if product.variation_price %}
+
+  {% if preciooferta > 0 %}
+
+  <del class="price-old">{{ product.variation_price }}</del>
+
+  {% endif %}
+  {% endif %}
+
+</div>
+
 <br>
 
 {{ product.field_descripcion_corta }}

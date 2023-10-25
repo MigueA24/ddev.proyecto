@@ -1,0 +1,20 @@
+uuid: 4cf2ce0b-84d7-4ac1-9dcb-5c5049494570
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_visitas_del_producto
+field_name: field_visitas_del_producto
+entity_type: commerce_product
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

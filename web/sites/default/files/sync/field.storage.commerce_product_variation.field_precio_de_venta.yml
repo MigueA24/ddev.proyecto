@@ -1,0 +1,19 @@
+uuid: 4f04c525-5e00-45b7-bf57-e00b04f1afda
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_price
+    - commerce_product
+id: commerce_product_variation.field_precio_de_venta
+field_name: field_precio_de_venta
+entity_type: commerce_product_variation
+type: commerce_price
+settings: {  }
+module: commerce_price
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

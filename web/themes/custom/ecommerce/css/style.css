@@ -180,3 +180,21 @@
  }
 
 /* Fin estilos css para el SliderShow */
+
+/* Css para los campos de precio en la vista detalle del producto*/
+
+ .divpreciodetalle{
+    margin: auto;
+    display: inline-block;
+  }
+
+  .divpreciodetalle .price-new{
+    float: left;
+  }
+
+   .divpreciodetalle .price-old{
+    float: left;
+    padding-top: 3px;
+  }
+
+/* Fin css para los campos de precio en la vista detalle del producto */
