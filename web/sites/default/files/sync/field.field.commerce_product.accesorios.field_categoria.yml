@@ -1,0 +1,29 @@
+uuid: 09d75565-7561-4506-877a-0630757e0794
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.accesorios
+    - field.storage.commerce_product.field_categoria
+    - taxonomy.vocabulary.categorias_de_productos
+id: commerce_product.accesorios.field_categoria
+field_name: field_categoria
+entity_type: commerce_product
+bundle: accesorios
+label: Categoría
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_de_productos: categorias_de_productos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

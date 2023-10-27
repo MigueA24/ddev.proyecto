@@ -1,0 +1,14 @@
+uuid: 5ff74a48-65d6-4d36-b37e-3f04b1d86168
+langcode: en
+status: true
+dependencies: {  }
+id: videojuegos
+label: Videojuegos
+traits: {  }
+locked: false
+description: ''
+variationType: null
+variationTypes:
+  - videojuegos
+multipleVariations: true
+injectVariationFields: true

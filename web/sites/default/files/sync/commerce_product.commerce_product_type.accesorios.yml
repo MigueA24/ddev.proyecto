@@ -1,5 +1,5 @@
-uuid: 6fa6474b-5222-4963-b5a7-f8372a8155d9
-langcode: es
+uuid: 89b58882-c2cf-47ae-a848-9f3f8dd48670
+langcode: en
 status: true
 dependencies: {  }
 id: accesorios
@@ -7,7 +7,7 @@ label: Accesorios
 traits: {  }
 locked: false
 description: ''
-variationType: accesorios
+variationType: null
 variationTypes:
   - accesorios
 multipleVariations: true

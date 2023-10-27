@@ -1,0 +1,8 @@
+uuid: 46422502-4bd9-4b40-91f4-48dc11d160ff
+langcode: es
+status: true
+dependencies: {  }
+name: Plataforma
+vid: plataforma
+description: ''
+weight: 0

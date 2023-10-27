@@ -20,7 +20,7 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'ecommerce/jhonatan'
+  - 'ecommerce/migue'
 
 libraries-extend:
   bootstrap/framework:

@@ -1,0 +1,24 @@
+uuid: 4daff7a1-6cf7-413b-9cfa-aaac568bb2c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.videojuegos
+    - field.storage.commerce_product_variation.field_precio_de_venta
+  module:
+    - commerce_price
+id: commerce_product_variation.videojuegos.field_precio_de_venta
+field_name: field_precio_de_venta
+entity_type: commerce_product_variation
+bundle: videojuegos
+label: 'Precio de venta'
+description: '<b>Este campo debe ser igual al campo precio</b>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_currencies:
+    - EUR
+  allow_negative: false
+field_type: commerce_price

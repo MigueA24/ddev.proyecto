@@ -1,0 +1,14 @@
+uuid: 81f558bb-17eb-468d-a586-324841a545c7
+langcode: en
+status: true
+dependencies: {  }
+id: videoconsolas
+label: Videoconsolas
+traits: {  }
+locked: false
+description: ''
+variationType: videoconsolas
+variationTypes:
+  - videoconsolas
+multipleVariations: true
+injectVariationFields: true

@@ -1,6 +1,6 @@
 uuid: 8213fb85-4ddf-4a6e-9d26-caa17997d2a1
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - ecommerce
@@ -9,7 +9,7 @@ _core:
 id: ecommerce_page_title
 theme: ecommerce
 region: navigation
-weight: -5
+weight: -9
 provider: null
 plugin: page_title_block
 settings:

@@ -1,24 +1,57 @@
-uuid: a8e33ea2-18a9-4422-be76-1f513279ea52
-langcode: es
+uuid: 06eee3f2-ac1a-4ac3-887a-5debed82474d
+langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.accesorios
     - field.field.commerce_product.accesorios.body
+    - field.field.commerce_product.accesorios.field_categoria
+    - field.field.commerce_product.accesorios.field_descripcion_corta
+    - field.field.commerce_product.accesorios.field_imagen_categoria
+    - field.field.commerce_product.accesorios.field_marca_camisetas
+    - image.style.large
   module:
     - commerce_product
-    - text
+    - image
 id: commerce_product.accesorios.default
 targetEntityType: commerce_product
 bundle: accesorios
 mode: default
 content:
-  body:
-    type: text_default
+  field_categoria:
+    type: entity_reference_label
     label: hidden
-    settings: {  }
+    settings:
+      link: false
     third_party_settings: {  }
-    weight: 11
+    weight: 3
+    region: content
+  field_descripcion_corta:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_categoria:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_marca_camisetas:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
     region: content
   title:
     type: string
@@ -26,7 +59,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
+    weight: 0
     region: content
   variations:
     type: commerce_add_to_cart
@@ -34,9 +67,10 @@ content:
     settings:
       combine: true
     third_party_settings: {  }
-    weight: 10
+    weight: 1
     region: content
 hidden:
+  body: true
   created: true
   langcode: true
   stores: true

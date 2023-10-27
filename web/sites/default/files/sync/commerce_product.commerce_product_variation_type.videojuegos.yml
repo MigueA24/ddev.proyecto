@@ -1,0 +1,10 @@
+uuid: c6f666bc-33ad-4183-8787-dcea7d4808c8
+langcode: en
+status: true
+dependencies: {  }
+id: videojuegos
+label: Videojuegos
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: false

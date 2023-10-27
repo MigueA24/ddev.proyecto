@@ -1,0 +1,11 @@
+uuid: c89ebb05-6d05-47b6-bf4c-56100a63670f
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.videojuegos
+id: commerce_product_variation.videojuegos
+target_entity_type_id: commerce_product_variation
+target_bundle: videojuegos
+default_langcode: site_default
+language_alterable: false

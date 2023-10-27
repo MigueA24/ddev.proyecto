@@ -1,0 +1,10 @@
+uuid: f534c6fb-98ee-424c-a326-7d30a49ca3c4
+langcode: es
+status: true
+dependencies: {  }
+id: videoconsolas
+label: Videoconsolas
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: null

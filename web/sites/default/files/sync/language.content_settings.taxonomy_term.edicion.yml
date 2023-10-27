@@ -1,0 +1,11 @@
+uuid: 72890d62-544b-422b-abbd-fc8adc4ce5cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.edicion
+id: taxonomy_term.edicion
+target_entity_type_id: taxonomy_term
+target_bundle: edicion
+default_langcode: site_default
+language_alterable: false

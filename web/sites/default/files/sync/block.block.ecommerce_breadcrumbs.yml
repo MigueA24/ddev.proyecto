@@ -1,6 +1,6 @@
 uuid: a4e99305-b9be-4ee3-9ee0-00cfc472278b
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: ecommerce_breadcrumbs
 theme: ecommerce
 region: navigation
-weight: 0
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

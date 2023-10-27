@@ -1,0 +1,11 @@
+uuid: 41f6b8fa-c8fa-47b6-a924-5a87de4854bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.videoconsolas
+id: commerce_product.videoconsolas
+target_entity_type_id: commerce_product
+target_bundle: videoconsolas
+default_langcode: site_default
+language_alterable: false

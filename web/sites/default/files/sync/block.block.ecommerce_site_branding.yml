@@ -1,6 +1,6 @@
 uuid: 1cdbc122-e473-4c24-8491-0d2ad811c8c6
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: ecommerce_site_branding
 theme: ecommerce
 region: header
-weight: -6
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:

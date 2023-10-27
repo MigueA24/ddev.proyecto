@@ -1,0 +1,11 @@
+uuid: d71a39d0-4395-49e6-b81c-0b19e98db573
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.videojuegos
+id: commerce_product.videojuegos
+target_entity_type_id: commerce_product
+target_bundle: videojuegos
+default_langcode: site_default
+language_alterable: false

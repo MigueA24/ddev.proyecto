@@ -1,0 +1,38 @@
+uuid: 1c336bf5-0dde-4249-a362-828dba7f7341
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.accesorios
+    - field.storage.commerce_product.field_imagen_categoria
+  module:
+    - image
+id: commerce_product.accesorios.field_imagen_categoria
+field_name: field_imagen_categoria
+entity_type: commerce_product
+bundle: accesorios
+label: 'Imagen Categoría'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: imagencategoria
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

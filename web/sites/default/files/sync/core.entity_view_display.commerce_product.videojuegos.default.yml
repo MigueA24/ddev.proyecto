@@ -1,0 +1,77 @@
+uuid: e48bcbee-ab6f-4230-925a-0f5e58bdbb00
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.videojuegos
+    - field.field.commerce_product.videojuegos.body
+    - field.field.commerce_product.videojuegos.field_categoria
+    - field.field.commerce_product.videojuegos.field_descripcion_corta
+    - field.field.commerce_product.videojuegos.field_imagen_categoria
+    - field.field.commerce_product.videojuegos.field_marca_camisetas
+    - image.style.large
+  module:
+    - commerce_product
+    - image
+id: commerce_product.videojuegos.default
+targetEntityType: commerce_product
+bundle: videojuegos
+mode: default
+content:
+  field_categoria:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_descripcion_corta:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_categoria:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_marca_camisetas:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  created: true
+  langcode: true
+  stores: true
+  uid: true
